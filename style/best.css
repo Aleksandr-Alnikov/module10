@@ -1,0 +1,54 @@
+article {
+    position: relative;
+}
+
+s {
+    display: block;
+    color: rgba(128, 128, 128, .7);
+}
+
+.best__wrapper {
+    padding: 0 30px;
+}
+
+.best__title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.best__image {
+    width: 280px;
+    height: 350px;
+    background-color: lightgrey;
+    margin-bottom: 10px;
+}
+
+.best__title-goods {
+    margin-bottom: 10px;
+}
+
+.best__text {
+    margin-bottom: 10px;
+    max-width: 350px;
+}
+
+.best__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.best__btn {
+    display: none;
+    position: absolute;
+    top: 58%;
+    left: 28%;
+    border-radius: 7px;
+    padding: 8px 20px;
+    background-color: #fff;
+}
+
+article:hover .best__btn {
+    display: block;
+}

@@ -1,0 +1,25 @@
+.hero__container {
+    background-color: lightgrey;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__wrapper {
+    padding: 0 30px;
+}
+
+.hero__text {
+    margin-bottom: 20px;
+}
+
+.hero__title {
+    margin-bottom: 20px;
+}
+
+.hero__btn {
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 7px;
+}

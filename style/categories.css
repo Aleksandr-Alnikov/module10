@@ -1,0 +1,28 @@
+.categories__wrapper {
+    padding: 0 30px;
+}
+
+.categories__title {
+    margin-bottom: 30px;
+}
+
+.categories__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories__item {
+    width: 250px;
+    height: 380px;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 30px;
+}
+
+.categories__link {
+    background-color: #fff;
+    padding: 10px 50px;
+    border-radius: 7px;
+}

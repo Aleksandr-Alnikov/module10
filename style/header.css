@@ -1,0 +1,19 @@
+.header__wrapper {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+
+.header__list {
+    display: flex;
+    gap: 20px;
+}
+
+.header__btn {
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 7px;
+}
