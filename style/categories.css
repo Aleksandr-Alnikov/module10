@@ -26,3 +26,7 @@
     padding: 10px 50px;
     border-radius: 7px;
 }
+
+.item-active {
+    box-shadow: 25px -15px 20px #c0c0c0;
+}

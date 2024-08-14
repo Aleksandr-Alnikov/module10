@@ -8,6 +8,11 @@
     <title>Krist</title>
     <link rel="stylesheet" href="style/style.css">
     <script type="module" src="scripts/index.js"></script>
+<!--    <script>-->
+<!--        document.addEventListener('DOMContentLoaded', () => {-->
+<!--            store();-->
+<!--        });-->
+<!--    </script>-->
 </head>
 <body>
 <header>
@@ -19,7 +24,14 @@
                     <a href="" class="header__link">Home</a>
                 </li>
                 <li class="header__item">
-                    <a href="" class="header__link">Shop</a>
+                    <select class="header__select">
+                        <option name="Shop" value="Shop">Shop</option>
+                        <option name="Electronics" value="Electronics" name  >Electronics</option>
+                        <option name="Jewelery" value="Jewelery" name >Jewelery</option>
+                        <option name="Men's clothing" value="Men's clothing" name>Men's clothing</option>
+                        <option name="Women's clothing" value="Women's clothing" name >Women's clothing</option>
+                    </select>
+
                 </li>
                 <li class="header__item">
                     <a href="" class="header__link">Our Story</a>
@@ -82,7 +94,11 @@
             <div class="best__wrapper">
                 <h2 class="best__title">Our Bestseller</h2>
                 <button type="button" class="best__btn">Add to Cart</button>
-                <ul class="best__list"></ul>
+                <ul class="best__list "></ul>
+                <div class="best__btn-wrapper">
+                    <button class="best__btn-add" type="button">Add new product</button>
+                    <button class="best__btn-pagination" type="button">Next products</button>
+                </div>
             </div>
         </div>
     </section>
@@ -153,6 +169,66 @@
             <p class="footer__copyright">&copy:2023 Krist All Rights are reserved</p>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal__wrapper">
+            <button type="button" class="close__btn">&#215;</button>
+            <form class="modal__form-add" action="">
+                <label>
+                    Category
+                    <select class="input" name="category">
+                        <option value="electronics">electronics</option>
+                        <option value="jewelery">jewelery</option>
+                        <option value="men's clothing">men's clothing</option>
+                        <option value="women's clothing">women's clothing</option>
+                    </select>
+                </label>
+                <label>
+                    Name
+                    <input class="input" type="text" name="name">
+                </label>
+                <label>
+                    Price
+                    <input class="input" type="number" name="price">
+                </label>
+                <label>
+                    Description
+                    <textarea class="input input__text" name="description"></textarea>
+                </label>
+                <button class="add__btn" type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal__edit">
+        <div class="modal__wrapper-edit">
+            <button type="button" class="close__btn">&#215;</button>
+            <form class="modal__form-edit" action="">
+                <label>
+                    Category
+                    <select class="input-edit" name="category">
+                        <option value="electronics">electronics</option>
+                        <option value="jewelery">jewelery</option>
+                        <option value="men's clothing">men's clothing</option>
+                        <option value="women's clothing">women's clothing</option>
+                    </select>
+                </label>
+                <label>
+                    Name
+                    <input class="input-edit" type="text" name="name">
+                </label>
+                <label>
+                    Price
+                    <input class="input-edit" type="number" name="price">
+                </label>
+                <label>
+                    Description
+                    <textarea class="input-edit input__text" name="description"></textarea>
+                </label>
+                <button class="add__btn" type="submit">Edit</button>
+            </form>
+        </div>
+    </div>
 </main>
 </body>
 </html>

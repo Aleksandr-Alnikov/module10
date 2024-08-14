@@ -37,6 +37,15 @@ s {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
+    margin-bottom: 50px;
+}
+
+.best__item:nth-child(n + 5) {
+    display: none;
+}
+
+.best__item.active {
+    display: list-item;
 }
 
 .best__btn {
@@ -49,6 +58,46 @@ s {
     background-color: #fff;
 }
 
+.best__control {
+    display: flex;
+    align-items: self-start;
+    gap: 10px;
+}
+
+.edit__btn {
+    margin-left: auto;
+}
+
+.remove__btn {
+    width: 32px;
+}
+
 article:hover .best__btn {
     display: block;
 }
+
+.best__btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.best__btn-add {
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #000;
+}
+
+.best__btn-pagination {
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #000;
+}
+
+.close__btn {
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: black;
+}
+

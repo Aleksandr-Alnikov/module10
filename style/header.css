@@ -17,3 +17,10 @@
     background-color: #000;
     border-radius: 7px;
 }
+
+.header__select {
+    border: none;
+    padding: 0;
+    width: 57px;
+    outline: transparent;
+}
